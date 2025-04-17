@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte e fundo geral */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Menu de bandas */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  nav a img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    /* Removido o efeito de transformação e sombra */
+  }
+  
+  /* Conteúdo principal */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e91e63;
+  }
+  
+  main p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Estilização para o GIF */
+  .gif-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .rock-gif {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    nav a img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+  
+    main h1 {
+      font-size: 2rem;
+    }
+  
+    main p {
+      font-size: 1rem;
+    }
+  }
+  
